@@ -1,0 +1,138 @@
+/* Basic reset and font settings */
+:root {
+    --main-bg-color: #000f1d;
+    --nav-bg-color: rgba(0, 0, 0, 0);
+    --text-color: rgb(221, 253, 255);
+    --nav-color: #00309063;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+/* Gradient background */
+.gradient-background {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to bottom, var(--nav-color), transparent);
+    top: 0; /* Ensure it starts from the top */
+    left: 0;
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Body settings */
+body {
+    background-color: #000715;
+    background-repeat: repeat-y;
+    backdrop-filter: blur(10px);
+}
+
+/* Header settings */
+header {
+    width: 100%;
+    position: relative; /* Ensure header is positioned relative to its normal position */
+}
+
+/* Navbar settings */
+nav {
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    z-index: 100; /* Ensure it stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+}
+
+/* Logo settings */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #0049a878;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 50px #6483ff36;
+}
+
+/* Navbar items settings */
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 3px solid #0078a878;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 50px #6483ff36;
+}
+
+.nav-items .but {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    border: 10px solid transparent;
+}
+
+.nav-items .but:hover {
+    background-color: #95aeff50;
+    box-shadow: 0 0 30px #95aeff50;
+}
+
+.use-now {
+    transition: all 0.3s ease;
+    background-color: #33a3ff;
+    color: #00212e;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.use-now:hover {
+    color: #002b2b;
+    background-color: #c3e7ff;
+}
+
+/* Title and description settings */
+.lungs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    filter: hue-rotate(20deg);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow: 0 0 100px #91a7ff;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #62abff;
+    text-shadow: 0 0 100px #6483ff;
+}
+
+p {
+    font-size: 10em;
+}
